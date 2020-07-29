@@ -8,9 +8,4 @@ It should have multiple sections.
 Site should look professional.
 
 ## Important:
-Please remeber to always use pull before pushing new code to the repository.
-This helps to prevent code conflicts when working in a team.
-Teams usually have separate branches when implementing new features, but we haven't decided on anything yet.
-
-## A Small Note:
-Please try to separate different styles into different css files and also the js files as it will help in debugging.
+I made this branch only to separate my code from others so i don't break their code. Will be merged to Master branch once bugs are fixed!!!
