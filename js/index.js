@@ -1,7 +1,7 @@
+//jshint esversion:6
 const $elements = $('.anim');
 const $window = $(window);
 
-$(window).on('scroll resize', checkView());
 
 const checkView = () => {
 	const windowHeight = $window.height();
@@ -15,3 +15,5 @@ const checkView = () => {
 		const elementBottom = elementTop + elementHeight;
 	});
 };
+
+$(window).on('scroll resize', checkView());
