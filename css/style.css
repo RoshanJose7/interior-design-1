@@ -16,6 +16,92 @@
 	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
 }
 
+body{
+	overflow-x: hidden;
+}
+
+/* The NavBar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	min-height: 70px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	transition: 0.5s;
+	font-family: 'EB Garmond';
+	z-index: 1000;
+}
+
+nav.sticky{
+	background-color: #663406;
+	min-height: 55px;
+}
+
+nav.sticky .logo{
+	color: rgb(226, 226, 226);
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+nav.sticky ul li a{
+	color: rgb(226, 226, 226);
+}
+
+.logo {
+	color: #663406;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: auto 20px 10px;
+	font-size: 20px;
+	font-family: 'Courgette', cursive;
+	flex: 1;
+	position: relative;
+	transition: 0.5s;
+}
+
+.nav-links {
+	display: flex;
+	flex: 2;
+	width: 50%;
+	margin-bottom: 0;
+	position: relative;
+	transition: 0.5s;
+	justify-content: space-around;
+}
+
+li {
+	list-style: none;
+	margin: auto 0px;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	color: #663406;
+	font-size: 20px;
+}
+
+#burger {
+    display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(-5%,-50%);
+}
+
+#burger div {
+    width: 25px;
+	height: 3px;
+	background-color: #663406;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
 /* Page Rules. */
 * {
     margin: 0;
@@ -34,7 +120,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .display-1 {
@@ -63,58 +149,4 @@ body {
 	border-radius: 21px;
 	padding: 2em 1em;
 	margin: 4em auto;
-}
-
-/* The NavBar */
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    min-height: 5vh;
-    background-color: #5d4954;
-	font-family: 'EB Garmond';
-}
-
-.logo {
-    color: rgb(226, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-	font-size: 20px;
-	font-family: 'Courgette', cursive;
-	flex: 1;
-	margin-left: 20px;
-}
-
-.nav-links {
-	display: flex;
-	flex: 2;
-	width: 40%;
-	margin-bottom: 0;
-    justify-content: space-around;
-}
-
-li {
-	list-style: none;
-	margin: auto 0px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: rgb(226, 226, 226);
-    font-size: 20px;
-}
-
-#burger {
-    display: none;
-	cursor: pointer;
-	margin: auto 0px;
-}
-
-#burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
 }

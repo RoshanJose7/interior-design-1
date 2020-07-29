@@ -1,36 +1,43 @@
 /* Nav Styles*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width:900px) {
     .nav-links{
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0;
-        height: 95vh;
-        top: 5vh;
-        background-color: #5d4954;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 55px;
+        background-color:  #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        justify-content: space-around;
+        transition: all 0.5s ease-out;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        pointer-events: none;
     }
-    .nav-links li{
-        opacity: 0;
+    .nav-links.open{
+        clip-path: circle(1500px at 90% -10%);
+        -webkit-clip-path: circle(1500px at 90% -10%);
+        pointer-events: all;
+        height: 100%;
+    }
+    nav.sticky #burger div{
+        background-color: rgb(226, 226, 226);
+    }
+    .nav-links li a{
+        font-size: 40px;
+    }
+    nav.sticky .nav-links{
+        background-color: #663406;
     }
     #burger{
         display: inline-block;
     }
-
+    .logo{
+        margin-top: auto;
+    }
     .search-txt-box{
-        width: 50%;
+        width: 75%;
     }
     .main-pg{
         height: 95vh;
@@ -40,21 +47,8 @@
     }
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
 
-@keyframes navLinkFade{
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
+/* Hamburger */
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
