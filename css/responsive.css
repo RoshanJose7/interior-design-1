@@ -28,13 +28,13 @@
         font-size: 40px;
     }
     nav.sticky .nav-links{
-        background-color: #663406;
+        background-color: #7B421D;
     }
     #burger{
         display: inline-block;
     }
     .logo{
-        margin-top: auto;
+        margin-bottom: 0;
     }
     .search-txt-box{
         width: 75%;

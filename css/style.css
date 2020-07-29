@@ -16,6 +16,8 @@
 	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
 }
 
+/* primary-color: #7B421D; */
+
 body{
 	overflow-x: hidden;
 }
@@ -25,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-	min-height: 70px;
+	min-height: 55px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -37,22 +39,21 @@ nav {
 }
 
 nav.sticky{
-	background-color: #663406;
-	min-height: 55px;
+	background-color: #7B421D;
 }
 
 nav.sticky .logo{
-	color: rgb(226, 226, 226);
 	margin-top: auto;
-	margin-bottom: 0;
+	/* margin-bottom: 0; */
 }
-
+nav.sticky .logo a{
+	color: rgb(226, 226, 226);
+}
 nav.sticky ul li a{
 	color: rgb(226, 226, 226);
 }
 
 .logo {
-	color: #663406;
     text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: auto 20px 10px;
@@ -61,6 +62,11 @@ nav.sticky ul li a{
 	flex: 1;
 	position: relative;
 	transition: 0.5s;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #663406;
 }
 
 .nav-links {
