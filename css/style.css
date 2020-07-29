@@ -44,7 +44,6 @@ nav.sticky{
 
 nav.sticky .logo{
 	margin-top: auto;
-	/* margin-bottom: 0; */
 }
 nav.sticky .logo a{
 	color: rgb(226, 226, 226);
@@ -88,6 +87,10 @@ li {
 	text-decoration: none;
 	color: #663406;
 	font-size: 20px;
+}
+
+.nav-links li a i{
+	margin-left: 10px;
 }
 
 #burger {
