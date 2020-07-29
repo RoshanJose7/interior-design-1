@@ -34,9 +34,7 @@ body {
 }
 
 .main-img {
-	width: 100%;
-	border-radius: 5%;
-	object-fit: contain;
+	border-radius: 21px;
 }
 
 .ital {
