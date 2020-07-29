@@ -38,6 +38,9 @@
     .search{
         padding-left: 25px;
     }
+    .one_third{
+        width: 30%;
+    }
 }
 
 .nav-active{
