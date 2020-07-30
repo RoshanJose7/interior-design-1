@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "A interior designing website for our internship project.",
   "main": "src/index.js",
+  "engines": {
+    "node": "14"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "cls && echo Installing Dependencies... && npm install",
+    "start": "cls && echo Pruning devDependencies... && npm prune --production",
+    "poststart": "cls && set NODE_ENV=production && set PORT=80 && node src/index.js",
+    "pretest": "cls && echo Installing Dependencies... && npm install",
+    "test": "cls && set NODE_ENV=development && set PORT=80 && nodemon src/index.js"
   },
   "repository": {
     "type": "git",
