@@ -16,12 +16,6 @@
 	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
 }
 
-/* primary-color: #7B421D; */
-
-body{
-	overflow-x: hidden;
-}
-
 /* The NavBar */
 nav {
     display: flex;
@@ -125,8 +119,8 @@ body {
 	font-family: 'Body', Helvetica, sans-serif;
 }
 
-.main-pg {
-	margin: 0;
+.focus {
+	margin: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -158,4 +152,31 @@ body {
 	border-radius: 21px;
 	padding: 2em 1em;
 	margin: 4em auto;
+}
+
+.shadow {
+	box-shadow: 1em 2em 4em rgba(0, 0, 0, 0.4);
+	border-radius: 21px;
+}
+
+/* About Us */
+
+.card img {
+	border-radius: 21px;
+}
+
+@media screen and (max-width: 767px) {
+	.card img {
+		margin: 1.5em auto !important;
+	}
+
+	.card {
+		padding: 0.45em 1em;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.card {
+		padding: 1.25em;
+	}
 }
