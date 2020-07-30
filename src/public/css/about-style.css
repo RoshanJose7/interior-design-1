@@ -1,0 +1,20 @@
+
+.card img {
+	border-radius: 21px;
+}
+
+@media screen and (max-width: 767px) {
+	.card img {
+		margin: 1.5em auto !important;
+	}
+
+	.card {
+		padding: 0.45em 1em;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.card {
+		padding: 1.25em;
+	}
+}

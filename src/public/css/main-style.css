@@ -1,0 +1,72 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/* Importing 2 fonts of the same family does not work on some devices. So, we split the import statement here. */
+@font-face {
+	/* EB Garmond Semi Bold 600 Italic font for heading. */
+	font-family: 'Heading';
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2') format('woff2');
+}
+
+@font-face {
+	/* EB Garmond Medium 500 font for Body. */
+	font-family: 'Body';
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
+}
+
+/* Page Rules. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(211, 211, 211, 0.363);
+	background-size: cover;
+	color: #5d4954;
+	font-family: 'Body', Helvetica, sans-serif;
+}
+
+.focus {
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.display-1 {
+	font-size: 90px;
+	font-weight: 400;
+}
+
+.btn {
+	background-color: rgba(211, 211, 211, 0.486);
+	border: 0;
+	margin-left: 10px;
+}
+
+.main-img {
+	border-radius: 21px;
+}
+
+.ital {
+	font-family: 'Heading';
+	font-style: italic;
+}
+
+.block {
+	background-color: rgba(255, 255, 255, 0.75);
+	color: #000000;
+	border-radius: 21px;
+	padding: 2em 1em;
+	margin: 4em auto;
+}
+
+.shadow {
+	box-shadow: 1em 2em 4em rgba(0, 0, 0, 0.4);
+	border-radius: 21px;
+}
