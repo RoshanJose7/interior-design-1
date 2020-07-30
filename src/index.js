@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Get the port.
-const port = process.env.PORT?.replace(/\s/g, '') ?? 80;
+const port = process.env.PORT.replace(/\s/g, '') ?? 80;
 
 // Initialize the backend app.
 const express = require('express');
