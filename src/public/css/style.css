@@ -30,7 +30,7 @@ body {
 	font-family: 'Body', Helvetica, sans-serif;
 }
 
-.main-pg {
+.focus {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -119,92 +119,29 @@ li {
     transition: all 0.3s ease;
 }
 
-
-/*-------------About Us----------------------*/
-
-/* framework */
-
-
-.one_third {
-    display:inline-block; 
-    float:left; 
-    margin:0 0 0 20px; 
-    list-style:none;
-    width:32%;
+.shadow {
+	box-shadow: 1em 2em 4em rgba(0, 0, 0, 0.4);
+	border-radius: 21px;
 }
 
-#about-us{display:block; width:100%; line-height:1.6em;}
+/* About Us */
 
-#about-us #about-intro{
-	margin-bottom:0;
-}
-#about-us #about-intro .panorama{
-	margin-bottom:20px;
-}
-#about-us #about-intro blockquote{
-	position:relative; 
-	margin:0; 
-	padding:0;
-}
-#about-us #about-intro blockquote p{
-	margin:0; 
-	padding:0 0 0 60px; 
-	font-size:16px; 
-	font-family:'EB Garmond'; 
-	line-height:1.6em;}
-#about-us #about-intro blockquote p span{
-	position:absolute; 
-	top:0; 
-	left:0; 
-	font-size:120px; 
-	line-height:.8em;
+.card img {
+	border-radius: 21px;
 }
 
-#about-us #skillset{
-	margin-bottom:0;
-}
-#about-us #skillset li{
-	margin-top:8px;
-}
-#about-us #skillset li:first-child{
-	margin-top:0;
+@media screen and (max-width: 767px) {
+	.card img {
+		margin: 1.5em auto !important;
+	}
+
+	.card {
+		padding: 0.45em 1em;
+	}
 }
 
-#about-us #team{
-	margin-bottom:0;
-}
-#about-us #team ul{
-	margin:0; 
-	padding:0; 
-	list-style:none;
-}
-#about-us #team ul li{
-	display:inline-block; 
-	float:left; 
-	width:120px; 
-	margin:10px 0 0 0px; 
-	padding:0; 
-	text-align:center;
-}
-#about-us #team ul li:first-child,
-#about-us #team ul > li:first-child + li + li + li + li
-{
-	margin-left:0;
-}
-#about-us #team ul > li:first-child, 
-#about-us #team ul > li:first-child + li,
-#about-us #team ul > li:first-child + li+li,
-#about-us #team ul > li:first-child + li+li+li{
-	margin-top:0;
-}
-#about-us #team ul li figure img{
-    padding:2px;}
-#about-us #team ul li figcaption p{
-    margin:3px 0 0 0; 
-    padding:0;
-}
-#about-us #team ul li figure figcaption .team_title{
-    margin:0; 
-    font-size:9px; 
-    line-height:normal;
+@media screen and (min-width:768px) {
+	.card {
+		padding: 1.25em;
+	}
 }
