@@ -4,11 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Get the port.
-<<<<<<< HEAD
 const port = process.env.PORT.replace(/\s/g, '') ?? 80;
-=======
-const port = process.env.PORT?.replace(/\s/g, '') ?? 80;
->>>>>>> dev-rosh
 
 // Initialize the backend app.
 const express = require('express');
@@ -28,8 +24,4 @@ app.use((req, res) => {
 });
 
 // Start the app by listening to the port.
-<<<<<<< HEAD
 app.listen(port, () => console.log(`Listening on http://localhost${port === '80' ? '/' : `:${port}/`}`));
-=======
-app.listen(port, () => console.log(`Listening on http://localhost${port === '80' ? '/' : `:${port}/`}`));
->>>>>>> dev-rosh
