@@ -69,6 +69,7 @@ nav.sticky ul li a {
 li {
 	list-style: none;
 	margin: auto 0px;
+	transition: all 0.3s ease 0s;
 }
 
 .nav-links li a {
