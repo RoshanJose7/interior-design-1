@@ -3,23 +3,24 @@
 	"parserOptions": {
 		"ecmaVersion": 2020
 	},
-    "rules": {
-        "no-confusing-arrow": "off",
-        "no-eq-null": "off",
-        "no-negated-condition": "off",
-        "no-undefined": "off",
-        "linebreak-style":"off",
-        "camelcase":"off",
-        "no-shadow":"off",
-        "no-unused-vars":"off",
-        "prefer-const":"error",
-        "prefer-destructuring": [
-            "off"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
+	"env": {
+		"amd": true,
+		"browser": true,
+		"node": true,
+		"jquery": true
+	},
+	"rules": {
+		"no-confusing-arrow": "off",
+		"no-eq-null": "off",
+		"no-negated-condition": "off",
+		"no-undefined": "off",
+		"linebreak-style": "off",
+		"camelcase": "off",
+		"no-shadow": "off",
+		"no-unused-vars": "off",
+		"prefer-const": "error",
+		"prefer-destructuring": ["off"],
+		"quotes": ["error", "single"],
 		"quote-props": "off",
 		"max-len": [
 			"error",
@@ -29,9 +30,5 @@
 			}
 		],
 		"guard-for-in": "off"
-    }
-<<<<<<< HEAD
+	}
 }
-=======
-}
->>>>>>> dev-rosh
