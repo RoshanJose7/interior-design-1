@@ -1,110 +1,161 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-	<meta charset='UTF-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<title>Ingenium Interiors</title>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ingenium Interiors</title>
 
-	<!-- Rating of our site. General means that it will be open for everyone to see. -->
-	<meta name='rating' content='General'>
+		<!-- Rating of our site. General means that it will be open for everyone to see. -->
+		<meta name="rating" content="General" />
 
-	<!-- Description of our site. Sometimes, this is used by the search engines. -->
-	<meta name='description' content='Interior Designing project for our internship.'>
+		<!-- Description of our site. Sometimes, this is used by the search engines. -->
+		<meta
+			name="description"
+			content="Interior Designing project for our internship."
+		/>
 
-	<!-- Change this to our site's theme color when we decide it. -->
-	<meta name='theme-color' content='#'>
+		<!-- Change this to our site's theme color when we decide it. -->
+		<meta name="theme-color" content="#" />
 
-	<!-- These are open graph tags which are used to embed links on sites like facebook. -->
-	<meta property='og:title' content='Ingenium Interiors'>
-	<meta property='og:image' content='./path/to/logo.png'>
-	<meta property='og:image:alt' content='Logo of our team.'>
-	<meta property='og:description' content='Interior Designing project for our internship.'>
-	<meta property='article:author' content='WD06B6 Team.'>
+		<!-- These are open graph tags which are used to embed links on sites like facebook. -->
+		<meta property="og:title" content="Ingenium Interiors" />
+		<meta property="og:image" content="./path/to/logo.png" />
+		<meta property="og:image:alt" content="Logo of our team." />
+		<meta
+			property="og:description"
+			content="Interior Designing project for our internship."
+		/>
+		<meta property="article:author" content="WD06B6 Team." />
 
-	<!-- Site icons -->
-	<link rel='shortcut icon' href='./path/to/favicon.ico' type='image/x-icon'>
-	<link rel='mask-icon' href='./path/to/favicon.ico' color='#'>
+		<!-- Site icons -->
+		<link
+			rel="shortcut icon"
+			href="./path/to/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="mask-icon" href="./path/to/favicon.ico" color="#" />
 
-	<!-- Bootstrap CDN -->
-	<link
-		rel='stylesheet'
-		href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
-		integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk'
-		crossorigin='anonymous'
-	>
+		<!-- Bootstrap CDN -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
 
-	<!-- Font Awesome Icons -->
-	<link
-		rel='stylesheet'
-		href='https://use.fontawesome.com/releases/v5.14.0/css/all.css'
-		integrity='sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc'
-		crossorigin='anonymous'
-	>
+		<!-- Font Awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+		/>
 
-	<!-- Slim jQuery (Without Ajax) -->
-	<script
-		src='https://code.jquery.com/jquery-3.5.1.slim.js'
-		integrity='sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM='
-		crossorigin='anonymous'
-	></script>
+		<!-- Slim jQuery (Without Ajax) -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.js"
+			integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+			crossorigin="anonymous"
+		></script>
 
-	<!-- External files. -->
-	<link rel="stylesheet" href="/css/nav-style.css">
-	<link rel='stylesheet' href='/css/main-style.css'>
-	<link rel='stylesheet' href='/css/responsive.css'>
-</head>
-<body>
-	<nav>
-		<div class='logo'>
-		  <a href="/"><h4>Ingenium</h4></a>
-		</div>
-		<ul class='nav-links'>
-			<form class='search form-inline my-2'>
-				<input class='search-txt-box form-control' type='search' placeholder='Search' aria-label='Search'>
-				<button id='search-btn' class='btn btn-primary my-2' type='submit'>
-					<i class='fas fa-search'></i>
-				</button>
-			</form>
-		  	<li><a href='#'>something</a></li>
-			<li><a href='/about'>About us<i class="fas fa-book-open"></i></a></li>
-			<li><a href='/contact'>Contact Us<i class="fas fa-phone"></i></a></li>
-		</ul>
-		<div id='burger'>
-			<div class='line1'></div>
-			<div class='line2'></div>
-			<div class='line3'></div>
-		</div>
-	</nav>
-	<main>
-		<div class='focus jumbotron bg-transparent text-center'>
-			<h1 class='display-1 text-center ital'>Welcome</h1>
-			<p class='lead text-center'>We, at Ingenium Interiors, stop at nothing but perfection.</p>
-			<img src='/img/image2.jpg' alt='Focus Image' class='main-img img-fluid shadow'>
-		</div>
-
-		<div class='col-10 col-md-8 mx-auto container block shadow'>
-			<h2 class='display-2 ital text-center mb-5'>What We Do</h2>
-			<div class='col-10 col-md-8 mx-auto'>
-				<p>
-					INGENIUM Interior Design is a full-service interior design company located in the Lorem Ipsum,
-					specializing in both residential and commercial design. Whether you need a quick refresh of
-					furniture and paint colors, or an extensive whole-house renovation, we can provide the expertise to
-					make sure the project runs smoothly and gives you the best results possible.
-				</p>
-				<p>
-					We believe that where you live matters hugely. Your home is not just an asset. It’s where you spend
-					your life; your best days and your worst days. It needs to make sense. To work as it should. Have all
-					the modern comforts but remain true to its original beauty and heritage.
-				</p>
-				<p>
-					Because we are a small design firm, we are extremely flexible and nimble. We have relationships with
-					many local craftsmen and subcontractors, so you can be assured that your project is completed with the
-					highest standards. Or, if you prefer, you can hire your own contractors, and we’ll work with them
-					throughout the remodeling process.
-				</p>
+		<!-- External files. -->
+		<link rel="stylesheet" href="/css/nav-style.css" />
+		<link rel="stylesheet" href="/css/main-style.css" />
+		<link rel="stylesheet" href="/css/responsive.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="/">
+					<h4>Ingenium</h4>
+				</a>
 			</div>
-	</div>
-</main>
-	<script src='/js/nav-scroll-anim.js'></script>
-</body>
+			<ul class="nav-links">
+				<form class="search form-inline my-2">
+					<input
+						class="search-txt-box form-control"
+						type="search"
+						placeholder="Search"
+						aria-label="Search"
+					/>
+					<button
+						id="search-btn"
+						class="btn btn-primary my-2"
+						type="submit"
+					>
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<li>
+					<a href="/">
+						<i class="fas fa-home"></i>
+						&emsp;Home
+					</a>
+				</li>
+				<li>
+					<a href="/about">
+						<i class="fas fa-book-open"></i>
+						&emsp;About us
+					</a>
+				</li>
+				<li>
+					<a href="/contact">
+						<i class="fas fa-phone-alt"></i>
+						&emsp;Contact Us
+					</a>
+				</li>
+			</ul>
+			<div id="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+		<main>
+			<div class="focus jumbotron bg-transparent text-center">
+				<h1 class="display-1 text-center ital">Welcome</h1>
+				<p class="lead text-center">
+					We, at Ingenium Interiors, stop at nothing but perfection.
+				</p>
+				<img
+					src="/img/image2.jpg"
+					alt="Focus Image"
+					class="main-img img-fluid shadow"
+				/>
+			</div>
+
+			<div class="col-10 col-md-8 mx-auto container block shadow">
+				<h2 class="display-2 ital text-center mb-5">What We Do</h2>
+				<div class="col-10 col-md-8 mx-auto">
+					<p>
+						INGENIUM Interior Design is a full-service interior
+						design company located in the Lorem Ipsum, specializing
+						in both residential and commercial design. Whether you
+						need a quick refresh of furniture and paint colors, or
+						an extensive whole-house renovation, we can provide the
+						expertise to make sure the project runs smoothly and
+						gives you the best results possible.
+					</p>
+					<p>
+						We believe that where you live matters hugely. Your home
+						is not just an asset. It’s where you spend your life;
+						your best days and your worst days. It needs to make
+						sense. To work as it should. Have all the modern
+						comforts but remain true to its original beauty and
+						heritage.
+					</p>
+					<p>
+						Because we are a small design firm, we are extremely
+						flexible and nimble. We have relationships with many
+						local craftsmen and subcontractors, so you can be
+						assured that your project is completed with the highest
+						standards. Or, if you prefer, you can hire your own
+						contractors, and we’ll work with them throughout the
+						remodeling process.
+					</p>
+				</div>
+			</div>
+		</main>
+		<script src="/js/nav-scroll-anim.js"></script>
+	</body>
 </html>

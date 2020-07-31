@@ -1,7 +1,7 @@
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	min-height: 55px;
 	position: fixed;
 	top: 0;
@@ -13,22 +13,35 @@ nav {
 	z-index: 1000;
 }
 
-nav.sticky{
-	background-color: #7B421D;
+nav #search-btn {
+	background-color: #7b421d;
 }
 
-nav.sticky .logo{
+nav #search-btn:hover {
+	background-color: #007bff;
+}
+
+nav.sticky #search-btn {
+	background-color: #ffffff;
+	color: #7b421d;
+}
+
+nav.sticky {
+	background-color: #7b421d;
+}
+
+nav.sticky .logo {
 	margin-top: auto;
 }
-nav.sticky .logo a{
+nav.sticky .logo a {
 	color: rgb(226, 226, 226);
 }
-nav.sticky ul li a{
+nav.sticky ul li a {
 	color: rgb(226, 226, 226);
 }
 
 .logo {
-    text-transform: uppercase;
+	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: auto 20px 10px;
 	font-size: 20px;
@@ -38,7 +51,7 @@ nav.sticky ul li a{
 	transition: 0.5s;
 }
 
-.logo a{
+.logo a {
 	text-decoration: none;
 	color: #663406;
 }
@@ -56,6 +69,7 @@ nav.sticky ul li a{
 li {
 	list-style: none;
 	margin: auto 0px;
+	transition: all 0.3s ease 0s;
 }
 
 .nav-links li a {
@@ -64,23 +78,43 @@ li {
 	font-size: 20px;
 }
 
-.nav-links li a i{
+.nav-links li a i {
 	margin-left: 10px;
 }
 
 #burger {
-    display: none;
+	display: none;
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	right: 5%;
-	transform: translate(-5%,-50%);
+	transform: translate(-5%, -50%);
 }
 
 #burger div {
-    width: 25px;
+	width: 25px;
 	height: 3px;
 	background-color: #663406;
-    margin: 5px;
-    transition: all 0.3s ease;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Change nav link colors on hover. */
+
+nav li:hover {
+	background-color: #7b421d;
+	padding: 1em 1.5em;
+}
+
+nav li:hover a {
+	color: #ffffff;
+}
+
+nav.sticky li:hover {
+	background-color: #ffffff;
+	padding: 1em 1.5em;
+}
+
+nav.sticky li:hover a {
+	color: #7b421d;
 }

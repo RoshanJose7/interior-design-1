@@ -11,6 +11,16 @@
 	margin: 20px;
 }
 
+#team .display-3 {
+	margin: 1.5em;
+}
+
+#intro,
+#skillset {
+	background-color: white;
+	color: black;
+}
+
 .the-card {
 	position: absolute;
 	height: 100%;
@@ -18,11 +28,11 @@
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 	backface-visibility: hidden;
-	font-family: "Balsamiq Sans", cursive;
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 .the-card:hover {
-	transform: rotateY(180deg) translateZ(500px);
+	transform: rotateY(-180deg) translateZ(500px);
 }
 
 .the-front {
@@ -30,8 +40,8 @@
 	height: 100%;
 	width: 100%;
 	backface-visibility: hidden;
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-	color: #5d4954;
+	background: white;
+	color: black;
 	text-align: center;
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 50%;
