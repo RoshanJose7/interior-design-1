@@ -1,5 +1,5 @@
 /* Nav Styles*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
 	.nav-links {
 		position: fixed;
 		height: 100vh;
@@ -47,13 +47,28 @@
 	}
 }
 
-/* Hamburger */
-.toggle .line1 {
-	transform: rotate(-45deg) translate(-5px, 6px);
+/*About Page Styles*/
+
+@media screen and (max-width: 1250px) {
+	.card-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto;
+	}
+
+	#riday {
+		grid-column: 1/2;
+	}
 }
-.toggle .line2 {
-	opacity: 0;
-}
-.toggle .line3 {
-	transform: rotate(45deg) translate(-5px, -6px);
+
+@media screen and (max-width: 900px) {
+	.card-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+	}
+
+	#riday {
+		grid-column: 1/2;
+	}
 }
