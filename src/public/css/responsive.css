@@ -1,60 +1,66 @@
 /* Nav Styles*/
-@media screen and (max-width:900px) {
-    .nav-links{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        top: 55px;
-        background-color:  #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transition: all 0.5s ease-out;
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        pointer-events: none;
-    }
-    .nav-links.open{
-        clip-path: circle(1500px at 90% -10%);
-        -webkit-clip-path: circle(1500px at 90% -10%);
-        pointer-events: all;
-        height: 100%;
-    }
-    nav.sticky #burger div{
-        background-color: rgb(226, 226, 226);
-    }
-    .nav-links li a{
-        font-size: 40px;
-    }
-    nav.sticky .nav-links{
-        background-color: #7B421D;
-    }
-    #burger{
-        display: inline-block;
-    }
-    .logo{
-        margin-bottom: 0;
-    }
-    .search-txt-box{
-        width: 75%;
-    }
-    .main-pg{
-        height: 95vh;
-    }
-    .search{
-        padding-left: 25px;
-    }
+@media screen and (max-width: 900px) {
+	.nav-links {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		top: 55px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transition: all 0.5s ease-out;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -10%);
+		-webkit-clip-path: circle(1500px at 90% -10%);
+		pointer-events: all;
+		height: 100%;
+	}
+	nav.sticky #burger div {
+		background-color: rgb(226, 226, 226);
+	}
+	.nav-links li a {
+		font-size: 40px;
+	}
+	nav.sticky .nav-links {
+		background-color: #7b421d;
+	}
+	#burger {
+		display: inline-block;
+	}
+	.logo {
+		margin-bottom: 0;
+	}
+	.search-txt-box {
+		width: 75%;
+	}
+	.main-pg {
+		height: 95vh;
+	}
+	.search {
+		padding-left: 25px;
+	}
 }
 
+/*About Page Styles*/
 
-/* Hamburger */
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+@media screen and (max-width: 767px) {
+	.crd img {
+		margin: 1.5em auto !important;
+	}
+
+	.crd {
+		padding: 0.45em 1em;
+	}
 }
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+
+@media screen and (min-width: 768px) {
+	.crd {
+		padding: 1.25em;
+	}
 }

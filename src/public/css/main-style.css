@@ -1,34 +1,48 @@
 /* Import fonts. */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 /* Importing 2 fonts of the same family does not work on some devices. So, we split the import statement here. */
 @font-face {
 	/* EB Garmond Semi Bold 600 Italic font for heading. */
-	font-family: 'Heading';
+	font-family: "Heading";
 	font-display: swap;
-	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2') format('woff2');
+	src: url("https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2")
+		format("woff2");
 }
 
 @font-face {
 	/* EB Garmond Medium 500 font for Body. */
-	font-family: 'Body';
+	font-family: "Body";
 	font-display: swap;
-	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
+	src: url("https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2")
+		format("woff2");
 }
 
 /* Page Rules. */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
+	overflow-x: hidden;
 	background-color: rgba(211, 211, 211, 0.363);
 	background-size: cover;
 	color: #5d4954;
-	font-family: 'Body', Helvetica, sans-serif;
+	font-family: "Body", Helvetica, sans-serif;
+}
+
+/* Hamburger */
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .focus {
@@ -54,7 +68,7 @@ body {
 }
 
 .ital {
-	font-family: 'Heading';
+	font-family: "Heading";
 	font-style: italic;
 }
 
