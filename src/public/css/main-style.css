@@ -6,22 +6,24 @@
 	/* EB Garmond Semi Bold 600 Italic font for heading. */
 	font-family: 'Heading';
 	font-display: swap;
-	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2') format('woff2');
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2')
+		format('woff2');
 }
 
 @font-face {
 	/* EB Garmond Medium 500 font for Body. */
 	font-family: 'Body';
 	font-display: swap;
-	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2') format('woff2');
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2')
+		format('woff2');
 }
 
 /* Page Rules. */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {

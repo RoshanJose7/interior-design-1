@@ -1,36 +1,36 @@
 {
-  "name": "interior-design",
-  "version": "1.0.0",
-  "description": "A interior designing website for our internship project.",
-  "main": "src/index.js",
-  "engines": {
-    "node": "14"
-  },
-  "scripts": {
-    "prestart": "cls && echo Installing Dependencies... && npm install",
-    "start": "cls && echo Pruning devDependencies... && npm prune --production",
-    "poststart": "cls && set NODE_ENV=production && set PORT=80 && node src/index.js",
-    "pretest": "cls && echo Installing Dependencies... && npm install",
-    "test": "cls && set NODE_ENV=development && set PORT=80 && nodemon src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WD06B6/interior-design.git"
-  },
-  "author": "WB06B6 Team",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/WD06B6/interior-design/issues"
-  },
-  "homepage": "https://github.com/WD06B6/interior-design#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "mssql": "^6.2.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-aqua": "^7.2.4",
-    "nodemon": "^2.0.4"
-  }
+	"name": "interior-design",
+	"version": "1.0.0",
+	"description": "A interior designing website for our internship project.",
+	"main": "src/index.js",
+	"engines": {
+		"node": "14"
+	},
+	"scripts": {
+		"prestart": "cls && echo Installing Dependencies... && npm install",
+		"start": "cls && echo Pruning devDependencies... && npm prune --production",
+		"poststart": "cls && set NODE_ENV=production && set PORT=80 && node src/index.js",
+		"pretest": "cls && echo Installing Dependencies... && npm install",
+		"test": "cls && set NODE_ENV=development && set PORT=80 && nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/WD06B6/interior-design.git"
+	},
+	"author": "WB06B6 Team",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/WD06B6/interior-design/issues"
+	},
+	"homepage": "https://github.com/WD06B6/interior-design#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"morgan": "^1.10.0",
+		"mssql": "^6.2.1"
+	},
+	"devDependencies": {
+		"eslint": "^7.5.0",
+		"eslint-config-aqua": "^7.2.4",
+		"nodemon": "^2.0.4"
+	}
 }
