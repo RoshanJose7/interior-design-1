@@ -1,5 +1,5 @@
 /* Nav Styles*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
 	.nav-links {
 		position: fixed;
 		height: 100vh;
@@ -49,18 +49,26 @@
 
 /*About Page Styles*/
 
-@media screen and (max-width: 767px) {
-	.crd img {
-		margin: 1.5em auto !important;
+@media screen and (max-width: 1250px) {
+	.card-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto;
 	}
 
-	.crd {
-		padding: 0.45em 1em;
+	#riday {
+		grid-column: 1/2;
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.crd {
-		padding: 1.25em;
+@media screen and (max-width: 900px) {
+	.card-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+	}
+
+	#riday {
+		grid-column: 1/2;
 	}
 }
