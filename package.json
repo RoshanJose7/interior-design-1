@@ -9,9 +9,9 @@
 	"scripts": {
 		"prestart": "cls && echo Installing Dependencies... && npm install",
 		"start": "cls && echo Pruning devDependencies... && npm prune --production",
-		"poststart": "cls && set NODE_ENV=production && set PORT=80 && node src/index.js",
+		"poststart": "cls && set NODE_ENV=production && node src/index.js",
 		"pretest": "cls && echo Installing Dependencies... && npm install",
-		"test": "cls && set NODE_ENV=development && set PORT=80 && nodemon src/index.js"
+		"test": "cls && set NODE_ENV=development && nodemon src/index.js"
 	},
 	"repository": {
 		"type": "git",
