@@ -1,0 +1,6 @@
+*.md
+*.js
+.env
+.env.example
+.gitignore
+LICENSE
