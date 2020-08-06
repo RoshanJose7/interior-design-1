@@ -24,6 +24,12 @@ Site should look professional.
 		Do not modify this file if you don't know what you are doing.
 	- All the assets in the `src/public` folder can be accessed as `localhost/<path>`.
 		Example - `src/public/css/style.css` can be accessed as `localhost/css/style.css`.
++ Configure the environment:
+	- Make a copy of the `.env.example` file.
+	- Rename it to `.env`.
+	- Open it and replace the placeholder values with the ones which I have sent on *Google Classroom*.
+	- If you can't find the post with the credentials, look for a post from "Riday Shah" on __6th August 2020__.
+	- Save it after replacing the values with actual values.
 + Navigate to the project folder and start the command prompt.
 + Type `npm test` to start the site in development mode.
 	This preserves all developer dependencies, which is important for writing/editing code.
