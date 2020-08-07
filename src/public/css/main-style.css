@@ -47,9 +47,13 @@ body {
 
 .focus {
 	margin: 2em;
+	margin-top: 6em;
 	display: flex;
+	height: 80vh;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-start;
+	background-image: url('/img/image2.jpg');
+	color: white;
 }
 
 .display-1 {
@@ -61,10 +65,6 @@ body {
 	background-color: rgba(211, 211, 211, 0.486);
 	border: 0;
 	margin-left: 10px;
-}
-
-.main-img {
-	border-radius: 21px;
 }
 
 .ital {
@@ -83,4 +83,37 @@ body {
 .shadow {
 	box-shadow: 1em 2em 4em rgba(0, 0, 0, 0.4);
 	border-radius: 21px;
+}
+
+.txt-res {
+	color: white;
+	height: 90vh;
+	background-image: url('/img/gallery/section_bg04.jpg');
+	opacity: 1;
+	background-size: cover;
+	font-size: 30px;
+	margin: 2em 0;
+}
+
+.info-caption h2 {
+	color: #6d455a;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
+}
+
+.gallery h1 {
+	font-size: 80px;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	justify-self: center;
+	align-self: center;
+}
+
+.gallery img {
+	border-radius: 21px;
+	margin: 10px;
 }
