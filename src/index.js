@@ -14,8 +14,17 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.static(path.join(`${__dirname}/public`)));
 
+app.use(express.json()); // Parse post requests to json.
+app.use(express.urlencoded({ extended: true })); // Parse get requests to json.
+
 // Handle routes.
 app.get('/', (_, res) => res.sendFile(path.join(`${__dirname}/pages/index.html`)));
+
+app.post('/contact', (req, res) => {
+	console.log(req.body);
+	res.redirect('/contact');
+});
+
 app.use((req, res) => {
 	// Send the file if it exists, or send the 404 error page.
 	const filePath = path.join(`${__dirname}/pages/${req.path}.html`);
