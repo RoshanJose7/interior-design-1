@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 // Dependencies section.
 const logger = require('morgan');
 const path = require('path');
 const fs = require('fs');
 
 // Get the port.
-const port = process.env.PORT || 80;
+const port = parseInt(process.env.PORT, 10) || 80;
 
 // Initialize the backend app.
 const express = require('express');
@@ -14,8 +16,13 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.static(path.join(`${__dirname}/public`)));
 
+app.use(express.json()); // Parse post requests to json.
+app.use(express.urlencoded({ extended: true })); // Parse get requests to json.
+
 // Handle routes.
 app.get('/', (_, res) => res.sendFile(path.join(`${__dirname}/pages/index.html`)));
+app.use('/contact', require('./contact'));
+
 app.use((req, res) => {
 	// Send the file if it exists, or send the 404 error page.
 	const filePath = path.join(`${__dirname}/pages/${req.path}.html`);
