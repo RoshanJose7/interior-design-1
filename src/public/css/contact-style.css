@@ -157,6 +157,10 @@ textarea.input1 + .shadow-input1 {
   border-radius: 25px;
 }
 
+#view {
+	font-family: Montserrat-ExtraBold;
+}
+
 /*---------------------------------------------*/
 .wrap-input1 {
   position: relative;

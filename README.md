@@ -71,6 +71,8 @@ Please try to separate different styles into different css files and also the js
 	This deletes all developer dependencies, which is are not useful for just checking the site.
 + If you are having port issues, please change the port in the `.env` file.
 	I have used the port 80 which is the default localhost port for windows.
++ Since this is an assignment, we are showing our contact forms at [/contact/forms Endpoint](http://localhost/contact/forms).
+	It would not be present in the real site, if we make one.
 
 ### Credits:
 This is our team who have worked on this project.
