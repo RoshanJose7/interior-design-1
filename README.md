@@ -71,3 +71,13 @@ Please try to separate different styles into different css files and also the js
 	This deletes all developer dependencies, which is are not useful for just checking the site.
 + If you are having port issues, please change the port in the `.env` file.
 	I have used the port 80 which is the default localhost port for windows.
+
+### Credits:
+This is our team who have worked on this project.
++ Riday Shah
++ Roshan Jose
++ Disha Chauhan
++ Kavya Akaa
++ Rutuja Kadam
++ Mitali Laroia
++ Rutuja Chandegave
