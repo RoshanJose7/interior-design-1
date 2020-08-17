@@ -69,7 +69,7 @@ body {
 }
 
 .ital {
-	font-family: 'Heading';
+	font-family: 'Heading', 'Courgette', Helvetica, sans-serif;
 	font-style: italic;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .info-caption h2 {
-	color: #6d455a;
+	color: #ff69b4;
 }
 
 .gallery {
@@ -129,4 +129,10 @@ body {
 .gallery img:hover {
 	transform: scale(1.25);
 	opacity: 1;
+}
+
+.tagline {
+	font-size: 1.5em;
+	font-family: 'Heading', 'Courgette', Helvetica, sans-serif;
+	color: #000000;
 }
