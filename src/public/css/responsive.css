@@ -68,7 +68,7 @@
 /*About Page Styles*/
 
 @media screen and (max-width: 1250px) {
-	.card-container {
+	.card-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto auto;
@@ -94,15 +94,27 @@
 		justify-self: center;
 		align-self: center;
 	}
+	.flip-card-front {
+		visibility: hidden;
+	}
+	.flip-card-back {
+		transform: rotateY(0deg);
+	}
+	.flip-card:hover .flip-card-inner {
+		transform: rotateY(0deg);
+	}
 }
 
 @media screen and (max-width: 990px) {
-	.card-container {
+	.card-grid {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto auto;
 	}
-
+	#team .display-3 {
+		margin: 1.5em;
+		font-size: 60px;
+	}
 	#riday {
 		grid-column: 1/2;
 	}
@@ -124,5 +136,14 @@
 	.gallery img {
 		border-radius: 21px;
 		margin: 10px;
+	}
+	.flip-card-front {
+		visibility: hidden;
+	}
+	.flip-card-back {
+		transform: rotateY(0deg);
+	}
+	.flip-card:hover .flip-card-inner {
+		transform: rotateY(0deg);
 	}
 }
