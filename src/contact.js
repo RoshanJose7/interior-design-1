@@ -21,8 +21,11 @@ router.post('/', (req, res) => {
 	};
 
 	connection.query('INSERT INTO contact SET ?', data, (err, result, _fields) => {
-		if (err) return console.log(err); // End the program in case of an error.
-		console.log(result); // Log the result to the console to see what happened.
+		// End the program in case of an error.
+		if (err) return console.log(err);
+
+		// Log the result to the console to see what happened.
+		return console.log(result);
 	});
 
 	connection.end();

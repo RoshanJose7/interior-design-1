@@ -16,8 +16,11 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.static(path.join(`${__dirname}/public`)));
 
-app.use(express.json()); // Parse post requests to json.
-app.use(express.urlencoded({ extended: true })); // Parse get requests to json.
+// Parse post requests to json.
+app.use(express.json());
+
+// Parse get requests to json.
+app.use(express.urlencoded({ extended: true }));
 
 // Handle routes.
 app.get('/', (_, res) => res.sendFile(path.join(`${__dirname}/pages/index.html`)));
