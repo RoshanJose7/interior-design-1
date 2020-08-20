@@ -65,7 +65,7 @@ router.get('/forms', async (_req, res) => {
 			`;
 		}
 
-		res.send(`
+		return res.send(`
 		${page.top}
 		${table}
 		${page.bottom}
