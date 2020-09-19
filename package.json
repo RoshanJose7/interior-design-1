@@ -7,9 +7,9 @@
 		"node": "14"
 	},
 	"scripts": {
-		"prestart": "( cls || clear ) && echo Installing Dependencies... && npm install",
-		"start": "( cls || clear ) && echo Pruning devDependencies... && npm prune --production",
-		"poststart": "( cls || clear) && set NODE_ENV=production && node src/index.js",
+		"prestart": "clear && echo Installing Dependencies... && npm install",
+		"start": "clear && echo Pruning devDependencies... && npm prune --production",
+		"poststart": "clear && set NODE_ENV=production && node src/index.js",
 		"pretest": "( cls || clear ) && echo Installing Dependencies... && npm install",
 		"test": "( cls || clear ) && set NODE_ENV=development && nodemon src/index.js"
 	},
