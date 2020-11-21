@@ -1,0 +1,120 @@
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 55px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	transition: 0.5s;
+	font-family: 'EB Garmond';
+	z-index: 1000;
+}
+
+nav #search-btn {
+	background-color: #7b421d;
+}
+
+nav #search-btn:hover {
+	background-color: #007bff;
+}
+
+nav.sticky #search-btn {
+	background-color: #ffffff;
+	color: #7b421d;
+}
+
+nav.sticky {
+	background-color: #7b421d;
+}
+
+nav.sticky .logo {
+	margin-top: auto;
+}
+nav.sticky .logo a {
+	color: rgb(226, 226, 226);
+}
+nav.sticky ul li a {
+	color: rgb(226, 226, 226);
+}
+
+.logo {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: auto 20px 10px;
+	font-size: 20px;
+	font-family: 'Courgette', cursive;
+	flex: 1;
+	position: relative;
+	transition: 0.5s;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #663406;
+}
+
+.nav-links {
+	display: flex;
+	flex: 2;
+	width: 50%;
+	margin-bottom: 0;
+	position: relative;
+	transition: 0.5s;
+	justify-content: space-around;
+}
+
+li {
+	list-style: none;
+	margin: auto 0px;
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	color: #663406;
+	font-size: 20px;
+}
+
+.nav-links li a i {
+	margin-left: 10px;
+}
+
+#burger {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(-5%, -50%);
+}
+
+#burger div {
+	width: 25px;
+	height: 3px;
+	background-color: #663406;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Change nav link colors on hover. */
+
+nav li:hover {
+	background-color: #7b421d;
+	padding: 1em 1.5em;
+}
+
+nav li:hover a {
+	color: #ffffff;
+}
+
+nav.sticky li:hover {
+	background-color: #ffffff;
+	padding: 1em 1.5em;
+}
+
+nav.sticky li:hover a {
+	color: #7b421d;
+}

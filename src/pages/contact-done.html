@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Form Sent.</title>
+	</head>
+	<style>
+		/* Import fonts. */
+		@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+		.container {
+		position: relative;
+		text-align: center;
+		color: white;
+		}
+
+		img { opacity:0.55 }
+
+		.centered {
+		position: absolute;
+		top: 45%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+		color: black;
+		font-size:40px;
+		font-family: 'Courgette', Helvetica, sans-serif;
+		}
+	</style>
+	<body>
+		<img src="/img/office-bg.png" alt="Snow" style="width:100%;">
+		<h1 div class = "centered">Contact form sent. Redirecting in <span id="time">5</span> seconds...</h1>
+		<script>
+			setInterval(() => {
+				const time = parseInt(document.getElementById('time').innerHTML, 10);
+				document.getElementById('time').innerHTML = time - 1;
+			}, 1e3);
+			setTimeout(() => {
+				window.location = '/contact'
+			}, 5e3);
+		</script>
+	</body>
+</html>

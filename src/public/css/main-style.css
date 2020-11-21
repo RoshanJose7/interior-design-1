@@ -1,0 +1,138 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* Importing 2 fonts of the same family does not work on some devices. So, we split the import statement here. */
+@font-face {
+	/* EB Garmond Semi Bold 600 Italic font for heading. */
+	font-family: 'Heading';
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR79wU6ingQ.woff2')
+		format('woff2');
+}
+
+@font-face {
+	/* EB Garmond Medium 500 font for Body. */
+	font-family: 'Body';
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/ebgaramond/v14/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkCY9_S6w.woff2')
+		format('woff2');
+}
+
+/* Page Rules. */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: rgba(211, 211, 211, 0.363);
+	background-size: cover;
+	color: #5d4954;
+	font-family: 'Body', Helvetica, sans-serif;
+}
+
+/* Hamburger */
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.focus {
+	margin: 2em;
+	margin-top: 6em;
+	display: flex;
+	height: 80vh;
+	flex-direction: column;
+	justify-content: flex-start;
+	color: white;
+}
+
+.display-1 {
+	color: #bd782a;
+	font-size: 90px;
+	font-weight: 400;
+}
+
+.btn {
+	background-color: rgba(211, 211, 211, 0.486);
+	border: 0;
+	margin-left: 10px;
+}
+
+.ital {
+	font-family: 'Heading', 'Courgette', Helvetica, sans-serif;
+	font-style: italic;
+}
+
+.block {
+	background-color: rgba(255, 255, 255, 0.75);
+	color: #000000;
+	border-radius: 21px;
+	padding: 2em 1em;
+	margin: 4em auto;
+}
+
+.shadow {
+	box-shadow: 1em 2em 4em rgba(0, 0, 0, 0.4);
+	border-radius: 21px;
+}
+
+.txt-res {
+	color: white;
+	height: 90vh;
+	background-image: url('/img/gallery/section_bg04.jpg');
+	opacity: 1;
+	background-size: cover;
+	font-size: 30px;
+	margin: 2em 0;
+}
+
+.info-caption h2 {
+	color: #ff69b4;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
+	margin-bottom: 5em;
+}
+
+.gallery h1 {
+	font-size: 80px;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	justify-self: center;
+	align-self: center;
+}
+
+.gallery img {
+	border-radius: 21px;
+	margin: 10px;
+	transition: transform 0.5s ease-out;
+}
+
+.gallery:hover img {
+	transform: scale(0.75);
+	opacity: 0.6;
+}
+
+.gallery img:hover {
+	transform: scale(1.25);
+	opacity: 1;
+}
+
+.tagline {
+	font-size: 1.5em;
+	font-family: 'Heading', 'Courgette', Helvetica, sans-serif;
+	color: #000000;
+}

@@ -1,0 +1,9 @@
+{
+	"extends": "tulip",
+	"env": {
+		"amd": true,
+		"browser": true,
+		"node": true,
+		"jquery": true
+	}
+}
