@@ -1,4 +1,5 @@
 # Interior Design
+➤ [Mirror Repository of our team project - WD06B6/interior-design](https://github.com/WD06B6/interior-design)\
 A repository for our internship project.\
 *Task description* - Design an interior designing website using all the concepts you have learned so far.
 It should have menus, search bar, footer, etc.
